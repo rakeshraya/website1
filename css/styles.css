@@ -1,0 +1,473 @@
+/* GLOBAL AND MOBILE STYLES FIRST */
+/* below code shows smooth scroll css code */ 
+html {
+	overflow-y: scroll;
+	/* scroll-behavior: smooth; */
+	width:100%;
+}
+/* background picture */
+body {
+	width:100%;
+    margin: 0;
+    padding: 0;
+    background: #222;
+    color: #000;
+    text-align: center;
+    background-image: url("https://netdna.webdesignerdepot.com/uploads/2013/06/featured48.jpg");
+	font: 15px/1.6em sans-serif;
+}
+/* header background */
+header {
+    background: #4f84c4;
+    color: #000;
+}
+/* navigation colour bar */
+nav {
+    background: #4f84c4;
+    display: none;
+}
+/* navigation bar padding */ 
+nav a {
+    padding: 0.5em;
+    display: block;
+}
+/* map size */ 
+#CookeMap {
+    width:90%;
+    height:400px;
+    margin:auto;
+}
+
+/* menu bar padding and colour selection */ 
+#menu {
+    padding: 0.5em;
+    background: #4f84c4;
+    display: block;
+}
+/* mobile first and tablet menu */
+.show-menu {
+    display: block;
+}
+
+figure {
+  width: 60%;
+  background: #aaa;
+  border: 5px solid #999;
+  overflow: hidden;
+  margin:0 auto;
+}
+
+figure img {
+  width: 100%;
+  height: 350px;
+  background: #eee;
+  margin-bottom: -4em;
+  display: block;
+}
+
+/* 
+  styles the figcaption element when the page first loads. The 
+  `transition` property simply "prepares" the element for a style 
+  transition - it does NOT trigger the transition.
+
+  `opacity` affects the WHOLE element - at `.78` text less is harsh when
+  visible. If the alpha channel of the rgba `background` transitioned 
+  instead, the text would not be affected and remain 100% black.
+
+  A `height` of `4em` and `padding` of `.25em` will fit 3 lines of text 
+  with a line-height of 1.2em nicely. For more, change the values.
+*/
+figcaption {
+  box-sizing: border-box;
+  height: 4em;
+  line-height: 1.2em;
+  padding: .25em;
+  transform: translateY(4em);
+  background: #fff;
+  /* background: rgba( 255, 255, 255, 0 ); */
+  opacity: 0;
+  transition: all .5s;
+}
+
+/* 
+  These styles are applied to the `figcaption` element when hovering 
+  over the`figure` element. The `transition` property on `figcaption` 
+  above is then applied to `all` these hover styles, over 0.5 seconds.
+*/
+figure:hover figcaption {
+  transform: translateY(0em);
+  /* background: rgba( 255, 255, 255, .78 ); */
+  opacity: .78;
+}
+    
+/* first header padding and sizing with colour scheme selected */
+a {
+    color: #000;
+    text-decoration: none;
+}
+h1 {
+    font-size: 1.5em;
+    padding: 0em;
+}
+main {
+    background: #4f84c4;
+    
+}
+section {
+    background: #4f84c4;
+}
+th,
+td {
+    text-align: center;
+}
+/* above css text align centers it */
+
+.top {
+  display: block;
+  vertical-align: middle;
+  line-height: 1.75em;
+  padding-right: 0.5em;
+}
+
+/* size for placement image*/
+.placement-img{
+	width: 80%;
+	margin: auto;
+	
+}
+     /* table colours and sizes ensurng it fits in with mobile first */
+    table {
+            font-family: arial, sans-serif;
+            border-collapse: collapse;
+            width: 95%;
+            }
+            td, th {
+            border: 1px solid #dddddd;
+            text-align: center;
+            padding: 7px;
+            }
+            tr:nth-child(even) {
+            background-color: #dddddd;
+            }
+
+/* padding and sizes for icons */
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 30px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+  border-radius: 50%;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+/* facebook icon */
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+/* twitter icons */
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+/* linked in icon */
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
+}
+
+/*Read more: https://html.com/tags/comment-tag/#ixzz502YlpI1V**/
+body {
+    font: 600 14px/24px "Open Sans", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", Sans-Serif;
+    margin: 12px 0;
+}
+.card-container {
+    cursor: pointer;
+    height: 220px;
+    /* perspective: 600; */
+    position: relative;
+    margin: auto;
+    width: 50%;
+}
+.card {
+    height: 100%;
+    /* position: middle; */
+    transform-style: preserve-3d;
+    transition: all 1s ease-in-out;
+    width: 100%;
+}
+.card:hover {
+    transform: rotateY(180deg);
+}
+.card .side {
+    backface-visibility: hidden;
+    border-radius: 6px;
+    height: 100%;
+    position: absolute;
+    overflow: hidden;
+    width: 100%;
+}
+.card .back {
+    background: #eaeaed;
+    color: #0087cc;
+    line-height: 20px;
+    text-align: center;
+    transform: rotateY(180deg);
+}
+/* sitemap align with title aligned*/
+.sitemap{
+  float:left;
+  list-style-type:none;
+  text-align:left;
+  color:white;
+  
+}
+/* size */
+footer{
+  height:400px;
+}
+.right{
+  margin-right:0;
+  float:right;
+  margin-right:20%; 
+  color:white;
+}
+
+.footcontant{
+ width:80%;
+ height:200px;
+ margin:auto;
+}
+.sitfont{
+  font-size:20px;
+}
+
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* Body font and colour */
+body {
+  font: normal 16px/1.5 "Helvetica Neue", sans-serif;
+  background: #456990;
+  color: #000;
+  overflow-x: hidden;
+  padding-bottom: 50px;
+}  /* INTRO SECTION
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+.intro {
+  background: #b2b2b2;
+  padding: 100px 0;
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+/* header 1 set to light blue and font size */
+h1 {
+  font-size: 2.5rem;
+  color: lightblue;
+}
+/* header 1 set to light blue and font size */
+h2 {
+  color:lightblue;
+}
+
+p {
+    border: 1px solid powderblue;
+}
+
+/* TIMELINE
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+/* timeline background colour */
+.timeline ul {
+  background: #456990;
+  padding: 50px 0;
+}
+/* timeline width and margin set */
+.timeline ul li {
+  list-style-type: none;
+  position: relative;
+  width: 6px;
+  margin: 0 auto;
+  padding-top: 50px;
+  background: #fff;
+}
+
+.timeline ul li::after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%);
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: inherit;
+}
+
+.timeline ul li div {
+  position: relative;
+  bottom: 0;
+  width: 400px;
+  padding: 15px;
+  background: #cccccc;
+}
+
+.timeline ul li div::before {
+  content: '';
+  position: absolute;
+  bottom: 7px;
+  width: 0;
+  height: 0;
+  border-style: solid;
+}
+
+.timeline ul li:nth-child(odd) div {
+  left: 45px;
+}
+
+.timeline ul li:nth-child(odd) div::before {
+  left: -15px;
+  border-width: 8px 16px 8px 0;
+  border-color: transparent #cccccc transparent transparent;
+}
+
+.timeline ul li:nth-child(even) div {
+  left: -439px;
+}
+
+.timeline ul li:nth-child(even) div::before {
+  right: -15px;
+  border-width: 8px 0 8px 16px;
+  border-color: transparent transparent transparent #F45B69;
+}
+
+.time {
+  display: block;
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+
+/* EFFECTS 
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+
+.timeline ul li::after {
+  transition: background .5s ease-in-out;
+}
+
+.timeline ul li.in-view::after {
+}
+
+.timeline ul li div {
+  visibility: hidden;
+  opacity: 0;
+  transition: all .5s ease-in-out;
+}
+
+.timeline ul li:nth-child(odd) div {
+  transform: translate3d(200px, 0, 0);
+}
+
+.timeline ul li:nth-child(even) div {
+  transform: translate3d(-200px, 0, 0);
+}
+
+.timeline ul li.in-view div {
+  transform: none;
+  visibility: visible;
+  opacity: 1;
+}
+/* timeline appearing from the left */
+ .timeline ul li {
+    margin-left: 20px;
+  }
+  .timeline ul li div {
+    width: calc(100vw - 91px);
+  }
+  .timeline ul li:nth-child(even) div {
+    left: 45px;
+  }
+  .timeline ul li:nth-child(even) div::before {
+    left: -15px;
+    border-width: 8px 16px 8px 0;
+  }
+
+
+
+
+/* FIRST BREAKPOINT (MEDIUM SIZE) */
+
+@media screen and (min-width: 500px) {
+    header {
+        background: #4f84c4;
+        color: #000;
+    }
+    nav a {
+        width: 44%;
+        display: inline-block;
+    }
+    nav a:hover {
+        background: #fff;
+    }
+    h1 {
+        font-size: 2em;
+    }
+    main {
+        width: 90%;
+        margin: 0 auto;
+    }
+ 
+    
+    section:hover {
+        /* background: #f0f0; */
+    }
+
+   
+
+} 
+/* END FIRST BREAKPOINT */
+
+
+/* SECOND BREAKPOINT (DESKTOP SIZE) */
+
+@media screen and (min-width: 1000px) {
+    header {
+        background: #4f84c4;
+        color: #000;
+    }
+    nav {
+        display: block;
+    }
+    nav a {
+        line-height: 0em;
+        width: inherit;
+    }
+    #menu {
+        display: none;
+    }
+    main {
+        max-width: 90%;
+    }
+  
+  }
+
+
+
+/* END SECOND BREAKPOINT */
+
